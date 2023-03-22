@@ -1,0 +1,166 @@
+/* @TodoSorteeri! */
+body {
+  margin: 0;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    'header'
+    /* 'nav' */
+    'content'
+    'sidebar';
+  margin: 0 20px;
+}
+
+.main-header {
+  padding: 5px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.navbar {
+  /* grid-area: nav; */
+  border-top: 0.5px solid gray;
+  border-bottom: 0.5px solid gray;
+  background-color: #f9f9fb;
+  padding: 5px 30px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.main-body {
+  height: 65vh;
+  grid-area: content;
+  padding: 110px;
+}
+
+.side {
+  grid-area: sidebar;
+  height: 85vh;
+  padding: 30px;
+  background-color: #bc8f8f;
+}
+
+.footer {
+  grid-area: footer;
+  border-top: 0.5px solid gray;
+  margin: 0 -20px;
+  padding: 20px 30px;
+  position: sticky;
+  text-align: center;
+}
+
+@media (min-width: 500px) {
+  .wrapper {
+    height: 100%;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+      'header  header'
+      /* 'nav     nav' */
+      'sidebar content'
+      'footer      footer';
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+  }
+}
+
+#logo {
+  height: 130px;
+}
+
+#heading {
+}
+
+#circle {
+  position: absolute;
+  height: 10vh;
+  padding: 15px;
+}
+
+.header-block {
+  grid-area: header;
+  margin: 0 -20px;
+}
+
+#forms {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+#tables {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+#random {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+}
+
+a:link,
+a:visited,
+a:focus {
+  color: black;
+}
+
+a:hover {
+  background: rgb(118, 230, 224);
+}
+
+a:active {
+  background: rgb(36, 104, 136);
+  color: rgb(255, 255, 255);
+}
+
+td {
+  border: black solid 0.5px;
+  width: 50px;
+  height: 20px;
+}
+
+button {
+  margin-top: 10px;
+  border-radius: 5px;
+  border: rgb(36, 104, 136) solid 0.5px;
+  background-color: aquamarine;
+}
+
+input:valid {
+  border-radius: 5px;
+  border: rgb(36, 104, 136) solid 0.5px;
+}
+
+input:focus {
+  outline: none;
+}
+
+input:invalid {
+  border: rgb(221, 28, 28) dotted 1px;
+  border-radius: 5px;
+}
+
+legend {
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}

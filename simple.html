@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML & CSS</title>
+    <link rel="icon" href="./resources/favicon.svg" />
+    <link rel="stylesheet" href="./simple.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header-block">
+        <img src="./resources/circle.svg" alt="madlimaij" id="circle" />
+        <header class="main-header"><h1>HTML & CSS</h1></header>
+        <nav class="navbar">
+          <ul>
+            <li class="tab" onclick="handleTabClick(event)">
+              <a href="#forms">Forms</a>
+            </li>
+            <li class="tab" onclick="handleTabClick(event)">
+              <a href="#tables">Tables</a>
+            </li>
+            <li class="tab" onclick="handleTabClick(event)">
+              <a href="#random">Random</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <article class="main-body">
+        <div id="article">
+          <h1>HTML & CSS playground</h1>
+          <p>
+            Always in progress...
+          </p>
+        </div>
+        <div id="forms" hidden="true">
+          <form action="">
+            <legend>Guessing game</legend>
+            <label for="animal">An animal*: </label><br />
+            <input id="animal" type="text" />
+            <br />
+            <label for="color" >A color*: </label><br />
+            <input id="color" type="text" />
+            <br />
+            <label for="number">A number from 1 to 9*: </label><br />
+            <input id="number" type="text" /><br />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <div id="tables" hidden="true">
+          <table>
+            <h1>Expect to see a snake game in the near future...</h1>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+        <div id="random" hidden="true">Gagagaga</div>
+      </article>
+      <aside class="side">
+        <h2>Go-tos</h2>
+        <ul list-style="none">
+          <li><a href="https://www.w3schools.com/html/">W3S: HTML</a></li>
+          <li><a href="https://www.w3schools.com/css/">W3S: CSS</a></li>
+          <li>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+              >MDN: HTML</a
+            >
+          </li>
+          <li>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+              >MDN: CSS</a
+            >
+          </li>
+          <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+        </ul>
+      </aside>
+      <footer class="footer">
+        <p>Contact info:</p>
+        <address>
+          <a href="madlimai.joe@gmail.com">madlimai.joe@gmail.com</a><br />
+          <a href="https://www.linkedin.com/in/madlimaijoe">Linkedin</a>
+        </address>
+      </footer>
+      <script src="./simple.js"></script>
+    </div>
+  </body>
+</html>
